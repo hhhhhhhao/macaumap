@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import MacauMap from './pages/macau';
 import reportWebVitals from './reportWebVitals';
+import "antd/dist/antd.css";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <MacauMap />
   </React.StrictMode>,
   document.getElementById('root')
 );
