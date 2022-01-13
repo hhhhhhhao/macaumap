@@ -24,8 +24,8 @@ export default function Activity(props) {
             
             <Modal title="Basic Modal" visible={isModalVisible} onOk={handleOk} onCancel={handleCancel}>
                 <div>活动名称：<a href={props.href}>{props.activityTitle}</a></div>
-                <div>日期：{props.date}</div>
-                <div>地点: {props.location}</div>
+                <div>日期：{props.date===" "?"暂无信息":props.date}</div>
+                <div>地点: {props.location===" "?"暂无信息":props.location}</div>
             </Modal>
         </div>
     )
