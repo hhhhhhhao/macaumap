@@ -22,12 +22,11 @@ export default function Drawer1() {
             <Drawer title="活动信息" placement="right" onClose={onClose} visible={visible}>
               {
                 
-                data.map(element => {
-                  if(element["标题"]===''){
+                data.map((element,index) => {
+                  if(element["title"]===''){
                     return null
                   }
-                  console.log(element);
-                  return <Activity activityTitle={element["标题"]} date={element["日期"]} location={element["地点"]} href={element["href"]} />
+                  return <Activity key={index} activityTitle={element["title"]} date={element["date"]} location={element["location"]} href={element["href"]} />
                 })
               }
              </Drawer>
